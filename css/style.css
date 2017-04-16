@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700');
+
+body {
+	font-family: Work Sans, sans-serif;
+	color: #5f5f5f;
+	margin: 0;
+	line-height: 1.65;
+}
+
+h1, h2, h3, h4, h5, h6, blockquote {
+	font-family: 'Playfair Display', serif;
+	color: #171717;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+header {
+	padding: 1.5rem 0;
+	line-height: 3rem;
+	vertical-align: middle;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+header:after {
+	clear: both;
+	content: '';
+	display: block;
+}
+
+header > a {
+	line-height: 0;
+	float: left;
+	display: block;
+}
+
+header img {
+	height: 2.6rem;
+}
+
+header nav {
+	float: right;
+}
+
+header ul li {
+	display: inline-block;
+	text-transform: uppercase;
+	margin-left: 2rem;
+}
+
+header ul li a {
+	text-decoration: none;
+	font-size: 0.9rem;
+	color: #5f5f5f;
+	transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+	color: #000;
+}
+
+/* ==========================================================================
+   HERO HEADR
+   ========================================================================== */
+
+section:nth-child(2) {
+	position: relative;
+	height: 500px;
+	overflow: hidden;
+}
+
+section:nth-child(2):before {
+	content: '';
+	height: 100%;
+	width: 100%;
+	background-color: rgba(12, 12, 12, 0.6);
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 5;
+}
+
+section:nth-child(2) img {
+	position: absolute;
+	top: -10%;
+}
+
+h1 {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	color: white;
+	width: 100%;
+	text-align: center;
+	font-size: 3rem;
+	margin: -92px 0 0 0;
+}
+
+h1 span {
+	display: block;
+	font-weight: 400;
+	font-style: italic;
+	
+}
+
+/* ==========================================================================
+   ABOUT
+   ========================================================================== */
+
+h2 {
+	font-size: 2.5rem;
+	text-align: center;
+	margin: 0 0 1.5rem 0;
+}
+
+section:nth-child(3) {
+	padding: 5rem;
+}
+
+section:nth-child(3) p {
+	text-align: center;
+	width: 740px;
+	margin: 0 auto 2rem auto;
+	font-weight: 300;
+}
+
+/* ==========================================================================
+   STATS
+   ========================================================================== */
+
+section:nth-child(4) {
+	background-image: url('../img/bg-pattern.jpg');
+	background-size: cover;
+	color: white;
+	text-align: center;
+}
+
+section:nth-child(4) ul {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 4rem 0;
+}
+
+section:nth-child(4) ul:after {
+	clear: both;
+	display: block;
+	content: '';
+}
+
+section:nth-child(4) ul li {
+	float: left;
+	width: 25%;
+}
+
+section:nth-child(4) h3 {
+	color: white;
+	margin-top: 0;
+	font-size: 2rem;
+	letter-spacing: 0.05em;
+	margin-bottom: 1.5rem;
+}
+
+section:nth-child(4) p {
+	text-transform: uppercase;
+	font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   PORTFOLIO
+   ========================================================================== */
+
+section:nth-child(5) {
+	padding: 5rem;
+}
+
+section:nth-child(5) > p {
+	text-align: center;
+	width: 740px;
+	margin: 0 auto 4rem auto;
+	font-weight: 300;
+}
+
+section:nth-child(5) ul {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+section:nth-child(5) ul:after {
+	clear: both;
+	content: '';
+	display: block;
+}
+
+section:nth-child(5) li {
+	float: left;
+	width: 33.33%;
+	position: relative;
+}
+
+section:nth-child(5) li:before {
+	display: block;
+	content: '';
+	padding-top: 100%;
+}
+
+section:nth-child(5) img {
+	max-width: none;
+	object-fit: cover;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+}
+
+section:nth-child(5) a {
+	position: absolute;
+	top: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.85);
+	z-index: 5;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	
+}
+
+section:nth-child(5) li:hover a {
+	opacity: 1;
+}
+
+section:nth-child(5) h3 {
+	color: white;
+	margin-top: 7rem;
+	font-size: 1.5rem;
+	letter-spacing: 0.05em;
+	opacity: 0;
+	transition: transform 0.5s ease, opacity 0.5s ease;
+	transform: translateY(20px);
+	margin-bottom: 1rem;
+}
+
+section:nth-child(5) li p {
+	text-transform: uppercase;
+	font-size: 0.9rem;
+	opacity: 0;
+	transition: transform 0.5s ease, opacity 0.5s ease;
+	transition-delay: 0.2s;
+	transform: translateY(10px);
+}
+
+section:nth-child(5) li:hover h3 {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+section:nth-child(5) li:hover p {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+/* ==========================================================================
+   QUOTE
+   ========================================================================== */
+
+section:nth-child(6) {
+	background-image: url('../img/bg-pattern.jpg');
+	background-size: cover;
+	color: white;
+	text-align: center;
+	padding: 6rem 0;
+}
+
+blockquote {
+	color: white;
+	max-width: 740px;
+	margin: 0 auto;
+	font-size: 1.5rem;
+	font-style: italic;
+}
+
+blockquote:before {
+	content: '“';
+}
+
+blockquote:after {
+	content: '”';
+}
+
+cite {
+	margin-top: 2rem;
+	display: block;
+	font-style: normal;
+	text-transform: uppercase;
+	font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   CLIENTS
+   ========================================================================== */
+
+section:nth-child(7) {
+	padding: 4rem 0;
+}
+
+section:nth-child(7) ul {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+section:nth-child(7) ul:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+section:nth-child(7) li {
+	text-align: center;
+	float: left;
+	width: 20%;
+}
+
+section:nth-child(7) img {
+	height: 120px;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+footer {
+	text-align: center;
+	padding: 4rem 0;
+	background-color: #ebebeb;
+	font-weight: 300;
+	font-size: 0.9rem;
+}
