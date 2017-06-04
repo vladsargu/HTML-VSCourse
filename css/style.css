@@ -302,11 +302,11 @@ blockquote {
 }
 
 blockquote:before {
-	content: '“';
+	content: '"';
 }
 
 blockquote:after {
-	content: '”';
+	content: '"';
 }
 
 cite {
